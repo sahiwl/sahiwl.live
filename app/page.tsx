@@ -1,12 +1,12 @@
 import Image from "next/image";
-
+import '@fontsource/proza-libre';
 export default function Home() {
   return (
     <div className="dark: text-white">
       <div className="flex justify-center items-center min-h-screen ">
-    <div className="max-w-[60vh] text-gray-300">
+    <div className="max-w-[60vh] text-[#acbacf] absolute  top-[2/4] left-10">
 
-      Hi, I’m Saul Goodman. Did you know that you have rights? The Constitution says you do. And so do I. I believe that until proven guilty, every man, woman, and child in this country is innocent. And that’s why I fight for you, Albuquerque! Better call Saul!
+      <strong className="font-[proza] text-[12rem]">Rami</strong>
       </div>
     </div>
     </div>

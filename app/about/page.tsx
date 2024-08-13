@@ -3,5 +3,6 @@ export default function about(){
         <div className="">
             <p className="italic">This is /aboutme.</p>
         </div>
+        
     )
 }
