@@ -18,15 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html suppressHydrationWarning={true} lang="en">
+      <body className={inter.className} >
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-        <div className="dark:bg-[#222831] bg-white min-h-[100vh]">
+        <div className="dark:bg-[#222831] min-h-[100vh] bg-white">
           <Navbar/>
           {children}
         </div>
