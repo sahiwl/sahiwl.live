@@ -6,14 +6,14 @@ export default function Home() {
       <div className="dark:text-white">
         <div className="max-w-[60vh] text-[#acbacf]">
           <h2 className="text-3xl md:text-6xl">Hii, it's</h2>
-          <strong className="font-[proza] text-6xl md:text-[12rem]">Sahil</strong>
+          <strong className="font-[proza] text-6xl md:text-[12rem]">Rami</strong>
         </div>
         <div className="p-48"> lets check this out
 
         </div>
       </div>
       <div className="m-auto ">
-        <h1 className="text-8xl text-center">Projects</h1>
+        <h1 className="text-6xl md:text-8xl text-center">Projects</h1>
         <Projects />
       </div>
     </div>

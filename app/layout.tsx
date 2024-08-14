@@ -19,14 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning={true} lang="en">
-      <body className={inter.className} >
+      <body className={inter.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-        <div className="dark:bg-[#222831] min-h-[100vh] bg-white">
+        <div className="overflow-hidden min-h-[100vh] dark:bg-custom-dark  bg-cyan-200">
           <Navbar/>
           {children}
         </div>
