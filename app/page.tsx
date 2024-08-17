@@ -6,7 +6,8 @@ export default function Home() {
       <div className="dark:text-white">
         <div className="max-w-[60vh] text-[#acbacf]">
           <h2 className="text-3xl md:text-6xl">Hii, it's</h2>
-          <strong className="font-[proza] text-6xl md:text-[12rem]">Rami</strong>
+          <h1 className='absolute -z-20 text-4xl text-white'>kuch bhi </h1>
+          <h2 className="font-[proza] text-6xl md:text-[12rem]">Rami</h2>
         </div>
         <div className="p-48"> lets check this out
 

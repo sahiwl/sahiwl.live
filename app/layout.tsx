@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Footer } from "@/components/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,11 +27,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <div className="overflow-hidden min-h-[100vh] dark:bg-custom-dark  bg-cyan-200">
+        <div className="overflow-hidden min-h-[100vh] dark:bg-[#18181b]  bg-cyan-200">
           <Navbar/>
           {children}
         </div>
         </ThemeProvider>
+        <div className="">
+          <Footer/>
+        </div>
       </body>
     </html>
   );
