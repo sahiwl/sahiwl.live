@@ -3,3 +3,9 @@
 @tailwind utilities;
   
 
+
+@layer base{
+    h3{
+        @apply md:text-5xl text-6xl my-6;
+    }
+}

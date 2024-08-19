@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning={true} lang="en">
+    <html suppressHydrationWarning={true} lang="en">       
       <body className={inter.className}>
         <ThemeProvider
             attribute="class"
@@ -27,14 +27,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <div className="overflow-hidden min-h-[100vh] dark:bg-[#18181b]  bg-cyan-200">
+        <div className="overflow-hidden min-h-[100vh] dark:bg-[#18181b] bg-white-200">
           <Navbar/>
           {children}
+          <Footer />
         </div>
         </ThemeProvider>
-        <div className="">
-          <Footer/>
-        </div>
       </body>
     </html>
   );
