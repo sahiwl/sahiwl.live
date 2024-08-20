@@ -15,8 +15,7 @@ export const Navbar = function () {
                             <li><Link href="/Projects">projects</Link></li>
                             <li>work</li>
                             <li>about</li>
-                        </ul>
-                        
+                        </ul>                       
                     </nav>
                 </div>
                 <div className="">

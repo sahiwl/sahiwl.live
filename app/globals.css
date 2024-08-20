@@ -6,6 +6,14 @@
 
 @layer base{
     h3{
-        @apply md:text-5xl text-6xl my-6;
+        @apply md:text-5xl text-[#03A688] text-6xl font-bold my-6;
+    }
+
+    h4{
+        @apply text-2xl text-[#5C8374] font-semibold;
+    }
+
+    p{
+        @apply text-base
     }
 }

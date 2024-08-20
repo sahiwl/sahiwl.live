@@ -18,6 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily:{
+        spacegrotesk: ['var(--font-spacegrotesk)'],
+        inter: ['var(--font-Inter)'],
+        sono: ['var(--font-sono)']
+      },
       colors: {
         'custom-dark': '#222831',
         // other custom colors...
