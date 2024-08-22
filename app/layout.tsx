@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sono, Space_Grotesk } from "next/font/google";
+import { Inter, Sometype_Mono, Sono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -8,15 +8,19 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-Inter" });
 const spacegrotesk = Space_Grotesk({
 subsets: ["latin"],
-// weight: '400',
 variable: "--font-spacegrotesk",
-style: ["normal"],
-display: "auto"
+display: "swap"
 })
-
+const sometypemono = Sometype_Mono({
+  subsets:["latin"],
+  style: 'normal',
+  display: "swap",
+  variable: "--font-sometypemono"
+})
 const sono = Sono({
   subsets: ["latin"],
-  variable: "--font-sono"
+  variable: "--font-sono",
+  display: "swap"
 })
 
 export const metadata: Metadata = {
@@ -31,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     //removed suppressHydrationWarning={true} in html tag
-    <html lang="en" suppressHydrationWarning={true} className={`${spacegrotesk.variable}`}>       
+    <html lang="en" suppressHydrationWarning={true} className={`${sometypemono.variable}`}>       
       <body>
         <ThemeProvider
             attribute="class"
@@ -39,7 +43,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <div className="overflow-hidden min-h-[100vh] dark:bg-[#18181b] font-spacegrotesk bg-white-200">
+        <div className="overflow-hidden min-h-[100vh] dark:bg-[#18181b] font-sometypemono bg-white-200">
           <Navbar/>
           {children}
           <Footer />

@@ -21,7 +21,8 @@ const config = {
       fontFamily:{
         spacegrotesk: ['var(--font-spacegrotesk)'],
         inter: ['var(--font-Inter)'],
-        sono: ['var(--font-sono)']
+        sono: ['var(--font-sono)'],
+        sometypemono: ['var(--font-sometypemono)']
       },
       colors: {
         'custom-dark': '#222831',
