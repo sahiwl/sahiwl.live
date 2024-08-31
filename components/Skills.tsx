@@ -13,7 +13,7 @@ export const Skills = function () {
           <div
           key={index} 
           className="flex flex-col transition-all ease-in-out text-center duration-300">
-            <div className="h-20 w-20 md:h-24 md:w-24 rounded-full backdrop-blur-3xl dark:bg-slate-800 bg-black/5 grid place-items-center hover:-translate-y-3 transition-all m-4 duration-200">
+            <div className="h-20 w-20 md:h-24 md:w-24 rounded-full backdrop-blur-3xl dark:bg-slate-800 bg-black/10 grid place-items-center hover:-translate-y-3 transition-all m-4 duration-200">
               <img
                 className=""
                 src={skill.src}
