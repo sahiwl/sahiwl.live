@@ -7,8 +7,8 @@ export default function Home() {
       <div className="dark:text-white w-full">
         <section className=" text-[#acbacf] flex h-[100vh]">
           <div className="flex-auto w-64 py-20">
-            <h1 className="text-3xl md:text-9xl">Hii, it's</h1>            
-            <h1 className="font-[proza] text-9xl md:text-[16rem]"> Sahil</h1>
+            <h1 className="text-3xl md:text-9xl font-sono">Hii, it's</h1>            
+            <h1 className=" text-6xl md:text-[16rem]"> Sahil</h1>
               {" "}
               <div className="">
               <ul className="list-disc ml-4">
