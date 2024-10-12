@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sometype_Mono, Space_Grotesk, Sono} from "next/font/google";
+import { Inter, Sometype_Mono, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -17,11 +17,11 @@ const sometypemono = Sometype_Mono({
   display: "swap",
   variable: "--font-sometypemono"
 })
-const sono = Sono({
-  subsets: ["latin"],
-  variable: "--font-sono",
-  display: "swap"
-})
+// const sono = Sono({
+//   subsets: ["latin"],
+//   variable: "--font-sono",
+//   display: "swap"
+// })
 
 export const metadata: Metadata = {
   title: "Website",
