@@ -30,7 +30,7 @@ export default function Home() {
           <div id="img" className="md:mx-20 md:visible invisible">
             <img
               className="rounded-full mx-auto"
-              src={"/platypus.jpeg"}
+              src={"/sahil.jpeg"}
               height="370"
               width="370"
               alt=""/>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function about() {
   return (
     // <div className="p-3">
-    //     <br />
+    //     <br />-
     //     <br />
     //     <br />
     //     <p className="italic">This is /aboutme.</p>
@@ -91,7 +91,7 @@ export default function about() {
           <div id="img" className="md:fixed static md:right-[2%] lg:right-[10%]">
             <Image
               className="rounded-3xl"
-              src="/platypus.jpg"
+              src="/sahil.jpeg"
               height="370"
               width="370"
               alt=""

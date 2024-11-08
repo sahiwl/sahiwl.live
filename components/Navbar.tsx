@@ -41,7 +41,7 @@ export const Navbar = function () {
   }, []);
   return (
     <div className="">
-      <div className="bg-cyan-900/55 top-0 w-full fixed ">....</div>
+      <div className="bg-cyan-900/55 top-0 w-full fixed ">i</div>
       <div className={`dark:border-cyan-400 border-b-2 text-center md:px-16 w-full px-10 md:py-6 fixed top-0 z-30 py-4 backdrop-blur-lg bg-opacity-100 ${isOpen ? 'h-auto' : 'h-20'}`}>        <div className="flex items-center justify-between mx-auto max-w-6xl text-[#00ADB5]">
           <div className="img ">
             <Link href="/">logo</Link>
