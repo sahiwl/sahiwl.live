@@ -8,11 +8,10 @@ export default function Home() {
         <section className=" text-[#acbacf] flex h-[100vh]">
           <div className="flex-auto w-64 py-20">
             <h1 className="text-3xl md:text-9xl font-inter">Hii, it's</h1>            
-            <h1 className=" text-6xl md:text-[16rem]"> Sahil</h1>
-              {" "}
+            <h2 className=" text-6xl font-exo2 md:text-[16rem]">Sahil</h2>
               <div className="">
               <ul className="list-disc ml-4">
-                <li>Self-driven and highly curious frontend web developer.</li>
+                <li className="">Self-driven and highly curious frontend web developer.</li>
                 <li>Currently pursuing B.Tech Computer Science with Specialization in
               IOT. My native work environment consists of working with
               technologies like JavaScript, Next.js, TypeScript and Python.</li>

@@ -18,7 +18,7 @@ export default function() {
               </p>
               <br />
               <p>
-             Aside from technology and academics, I enjoy playing basketball (I played zonals and represented my school for about 4 years in middle school), listening to music, journaling occasionally about things I can't control (OCD was never my cue), and I consider myself to be an ambivert ~{" "} .
+             Aside from technology and academics, I enjoy playing basketball (I played zonals and represented my school for about 4 years in middle school), listening to music, journaling occasionally about things I can't control (OCD was never my cue), and I consider myself to be an ambivert ~&nbsp; .
                 And occasionally, on the rarest of occasions—I'm telling you right now, rarer than a hailey's come—I read. To put it briefly, all of this is just the story of a nice neighbourhood guy who is trying to get back on his feet in life.
 
               </p>
@@ -49,7 +49,7 @@ export default function() {
               this time when i tried it again - not only it made sense, but i was
               ,kind of enjoying the small wins. and no no, dont get me wrong by
               the very details of my moody-development journey~ im not some very
-              genious or creative developer,{" "}
+              genious or creative developer,&nbsp;
               <i>just a guy who enjoys writing code</i> and will get there,
               someday.
               </p>
@@ -58,7 +58,7 @@ export default function() {
               <p>
                 Apart from working on this, i dont have too many things as i
                 linearly planned down what i want to focus on this semseter, apart
-                from uni-academics (which never was a priority duh :D). <br />{" "}
+                from uni-academics (which never was a priority duh :D). <br />&nbsp;
                 <br />
                 Things on my to-learn-list:
               </p>

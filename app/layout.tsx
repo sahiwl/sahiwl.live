@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sometype_Mono, Space_Grotesk} from "next/font/google";
+import { Exo_2, Inter, Sometype_Mono, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -9,6 +9,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-Inter" });
 const spacegrotesk = Space_Grotesk({
 subsets: ["latin"],
 variable: "--font-spacegrotesk",
+display: "swap"
+})
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+variable: "--font-exo2",
 display: "swap"
 })
 const sometypemono = Sometype_Mono({

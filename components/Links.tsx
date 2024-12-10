@@ -12,7 +12,7 @@ export default function LinksComp(){
             onClick={() => window.open(link.url, "_blank")}
           >
             <p className="dark:text-zinc-300 text-zinc-800 m-0 text-sm lg:text-base md:text-base">
-              {link.name} <span className="dark:text-zinc-600 text-zinc-500">{" // "}</span>{" "}
+              {link.name} <span className="dark:text-zinc-600 text-zinc-500">{" // "}</span>&nbsp;
               {link.value}
             </p>
             {/* <p className="dark:text-zinc-300 text-zinc-800 m-0">{link.icon({})}</p> */}

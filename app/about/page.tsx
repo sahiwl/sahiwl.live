@@ -24,7 +24,7 @@ export default function about() {
               Apart from tech and studies, im really into basketball (i played
               zonals and represented my school for ~4years in middleschool), a
               music enthusiast, i sometimes journal about things i cannot
-              control (ocd was never my cue) and im really an ambivert ~{" "}
+              control (ocd was never my cue) and im really an ambivert ~&nbsp;
               <u>best of both words(hover: introverts and extroverts)</u> ig.
               And sometimes when im really really bored out of hell, i read
               (rarer than a haileys come im telling you right now). So, to
@@ -58,7 +58,7 @@ export default function about() {
             this time when i tried it again - not only it made sense, but i was
             ,kind of enjoying the small wins. and no no, dont get me wrong by
             the very details of my moody-development journey~ im not some very
-            genious or creative developer,{" "}
+            genious or creative developer,&nbsp;
             <i>just a guy who enjoys writing code</i> and will get there,
             someday.
             </p>
@@ -67,7 +67,7 @@ export default function about() {
             <p>
               Apart from working on this, i dont have too many things as i
               linearly planned down what i want to focus on this semseter, apart
-              from uni-academics (which never was a priority duh :D). <br />{" "}
+              from uni-academics (which never was a priority duh :D). <br />&nbsp;
               <br />
               Things on my to-learn-list:
             </p>

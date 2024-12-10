@@ -11,6 +11,7 @@ const config = {
       fontFamily:{
         spacegrotesk: ['var(--font-spacegrotesk)'],
         inter: ['var(--font-Inter)'],
+        exo2: ['var(--font-exo2)'],
         // sono: ['var(--font-sono)'],
         sometypemono: ['var(--font-sometypemono)']
       },

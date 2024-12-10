@@ -6,6 +6,34 @@ export default function Projects() {
   return (
     <section className="p-20">
       <div className="flex flex-col justify-center items-center">
+
+      <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
+          <div className="md:w-1/2">
+            <h3 className="text-3xl p-3"> Readily</h3>
+            <p className="block">
+            Readily is a modern, full-stack bookstore web application built with Next.js, React, and JavaScript on the frontend, and a robust backend powered by Node.js with RESTful APIs. It integrates MongoDB for seamless book management and user data, deployed on Vercel for scalability and performance.
+              <br />
+              <a
+                href="https://sahiwl-readily.vercel.app/"
+                target="/blank"
+                className="underline"
+              >
+                Live Link&nbsp;
+              </a>
+            </p>
+          </div>
+          <div className="md:w-1/2 py-5">
+            <Image
+              className="rounded"
+              src={"/Readily.png"}
+              height="400"
+              width="400"
+              alt=""
+              priority
+            />
+          </div>
+        </div>
+
         <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
           <div className="md:w-1/2">
             <h3 className="text-3xl p-3">WeatherApp</h3>
@@ -20,7 +48,7 @@ export default function Projects() {
                 target="/blank"
                 className="underline"
               >
-                Live Link{" "}
+                Live Link
               </a>
             </p>
           </div>
@@ -63,6 +91,9 @@ export default function Projects() {
             />
           </div>
         </div>
+        
+
+        
       </div>
     </section>
   );
