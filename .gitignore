@@ -39,13 +39,15 @@ next-env.d.ts
 idk.tsx
 skills1.tsx
 
-
-
-listensto
-actions.ts
-dataFetcher.ts
-spotifyData.ts
-types.ts
-api
 .env
+
+
+##spotify stats
+# listensto
+# actions.ts
+# dataFetcher.ts
+# spotifyData.ts
+# types.ts
+# api
+# .env
 
