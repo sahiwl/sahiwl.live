@@ -4,10 +4,10 @@ import { Skills } from "@/components/Skills";
 export default function Home() {
   return (
     <div className="pt-32 mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
-      <div className="dark:text-white w-full">
+      <div className="dark:text-white text-slate-900 w-full">
         <section className=" text-[#acbacf] flex h-[100vh]">
-          <div className="flex-auto w-64 py-20">
-            <h1 className="text-3xl md:text-9xl font-inter">Hii, it's</h1>            
+          <div className="flex-auto w-64 py-20 ">
+            <h1 className="text-3xl md:text-9xl font-spacegrotesk">Hii, it's</h1>            
             <h2 className=" text-6xl font-exo2 md:text-[16rem]">Sahil</h2>
               <div className="">
               <ul className="list-disc ml-4">
@@ -42,7 +42,7 @@ export default function Home() {
         <Skills />
       </div>
       <div className="m-auto ">
-        <h1 className="text-6xl md:text-8xl text-center">Projects</h1>
+        <h1 className="text-6xl md:text-8xl font-exo2 text-center">Projects</h1>
         <Projects />
       </div>
     </div>

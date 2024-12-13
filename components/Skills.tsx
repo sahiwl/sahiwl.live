@@ -3,9 +3,9 @@ import { allSkills } from "@/lib/skills";
 export const Skills = function () {
   return (
     <div className="">
-      <h1 className="my-5 pt-5 text-5xl text-left">
-        <span className="dark: text-cyan-400">&lt;</span>Skills
-        <span className="dark: text-cyan-300">/&gt;</span>
+      <h1 className="my-5 pt-5 text-5xl font-exo2 text-left">
+        <span className="dark:text-cyan-400">&lt;</span>Skills
+        <span className="dark:text-cyan-300">/&gt;</span>
       </h1>
       <div className="w-full flex flex-wrap justify-evenly items-center md:justify-start md:gap-x-1 md:items-start mb-20">
 

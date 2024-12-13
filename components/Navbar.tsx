@@ -21,6 +21,9 @@ export const NavLinks = () => {
         <li>
           <Link href="/projects">Projects</Link>
         </li>
+        <li>
+          <Link href="/listensto">ListensTo</Link>
+        </li>
       </ul>
     </>
   );
@@ -40,9 +43,9 @@ export const Navbar = function () {
     setMounted(true);
   }, []);
   return (
-    <div className="">
+    <article className="">
       <div className="bg-cyan-900/55 top-0 w-full fixed ">i</div>
-      <div className={`dark:border-cyan-400 border-b-2 text-center md:px-16 w-full px-10 md:py-6 fixed top-0 z-30 py-4 backdrop-blur-lg bg-opacity-100 ${isOpen ? 'h-auto' : 'h-20'}`}>        <div className="flex items-center justify-between mx-auto max-w-6xl text-[#00ADB5]">
+      <section className={`dark:border-cyan-400 border-b-2 text-center md:px-16 w-full px-10 md:py-6 fixed top-0 z-30 py-4 backdrop-blur-lg bg-opacity-100 ${isOpen ? 'h-auto' : 'h-20'}`}>        <div className="flex items-center justify-between mx-auto max-w-6xl text-[#00ADB5]">
           <div className="img ">
             <Link href="/">
             <h1 className="font-exo2">sahiwl</h1>
@@ -80,7 +83,7 @@ export const Navbar = function () {
         <NavLinks />
       </div>
     )}
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };

@@ -12,11 +12,12 @@ const config = {
         spacegrotesk: ['var(--font-spacegrotesk)'],
         inter: ['var(--font-Inter)'],
         exo2: ['var(--font-exo2)'],
-        // sono: ['var(--font-sono)'],
+        sono: ['var(--font-sono)'],
         sometypemono: ['var(--font-sometypemono)']
       },
       colors: {
         'custom-dark': '#222831',
+        'spaceblack': '#18181b'
         // other custom colors...
       },
     },

@@ -1,9 +1,14 @@
 export type NowPlayingRes = {
 isPlaying: boolean;
-songName: string;
+songName: {
+  name: string
+};
 artist: string;
-songURL: string;
+url: string;
 imageURL: string;
+"@attr": {
+    nowplaying: boolean;
+  };
 }
 
 export type TopArtists = {
@@ -31,6 +36,8 @@ export type TopTracksRes = {
     name: string;
     playcount: string;
     url: string;
-    artist: string;
+    artist: {
+      name: string
+    };
 }
 

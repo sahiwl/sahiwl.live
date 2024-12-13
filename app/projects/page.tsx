@@ -9,7 +9,7 @@ export default function Projects() {
 
       <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
           <div className="md:w-1/2">
-            <h3 className="text-3xl p-3"> Readily</h3>
+            <h3 className="text-3xl p-3 font-exo2"> Readily</h3>
             <p className="block">
             Readily is a modern, full-stack bookstore web application built with Next.js, React, and JavaScript on the frontend, and a robust backend powered by Node.js with RESTful APIs. It integrates MongoDB for seamless book management and user data, deployed on Vercel for scalability and performance.
               <br />
@@ -36,7 +36,7 @@ export default function Projects() {
 
         <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
           <div className="md:w-1/2">
-            <h3 className="text-3xl p-3">WeatherApp</h3>
+            <h3 className="text-3xl font-exo2 p-3">WeatherApp</h3>
             <p className="block">
               A simple weather app that gives you real-time weather info for any
               city. Built with Vite and React, it’s got a clean UI and fetches
@@ -65,7 +65,7 @@ export default function Projects() {
         </div>
         <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
           <div className="md:w-1/2">
-            <h3 className="text-3xl p-3"> To-Do List App</h3>
+            <h3 className="text-3xl font-exo2 p-3"> To-Do List App</h3>
             <p className="block">
               A minimalist to-do list app to help keep track of daily tasks.
               Built with Vite and React, it’s fast and super easy to use.
