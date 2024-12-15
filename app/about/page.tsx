@@ -12,7 +12,7 @@ export default function about() {
     <main className="md:py-20 py-24 mx-16 md:mx-20 md:my-24 my-20 dark:text-zinc-200 ">
       <section className="grid md:grid-cols-2 grid-rows-1 justify-items-center">
         <div className="md:order-1 order-2">
-          <h3 className="">Hi im sahiwl aka sahil</h3>
+          <h3 className="font-exo2">Hi im sahil <p className="font-sometypemono italic hover:underline">aka sahiwl (pronounced same)</p></h3>
           <div className="text-sm md:leading-7 leading-loose">
             <p>
               hi, i am sahil (aka sahiwl on the internet) ~ currently a cs
@@ -32,7 +32,7 @@ export default function about() {
               stand up on his own knees, in life.
             </p>
             <br />
-            <h4 className="">his'story'</h4>
+            <h4 className="font-exo2">his'story</h4>
             <p> 
               I started programming back in 2020 with python, learnt the basics,
               how to program a few basic(hover: show programs) programs and for
@@ -63,7 +63,7 @@ export default function about() {
             someday.
             </p>
        
-            <h3 className="pt-4">What im upto nowadays?</h3>
+            <h3 className="pt-4 font-exo2">What im upto nowadays?</h3>
             <p>
               Apart from working on this, i dont have too many things as i
               linearly planned down what i want to focus on this semseter, apart
