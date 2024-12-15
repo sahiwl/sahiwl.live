@@ -7,12 +7,15 @@ import { useEffect, useState } from "react";
 import { FaLaptopCode, FaLink, FaUser } from "react-icons/fa";
 import { FiHeadphones, FiSun } from "react-icons/fi";
 import { PiMoonFill } from "react-icons/pi";
+import { LuUser } from "react-icons/lu";
+import { IoIosLink } from "react-icons/io";
+import { LiaLaptopCodeSolid } from "react-icons/lia";
 
 
 const navLinks = [
-  { href: "/about", label: "About", icon: <FaUser size={20} /> },
-  { href: "/links", label: "Links", icon: <FaLink size={20} /> },
-  { href: "/projects", label: "Projects", icon: <FaLaptopCode size={20} /> },
+  { href: "/about", label: "About", icon: <LuUser size={20} /> },
+  { href: "/links", label: "Links", icon: <IoIosLink size={22} /> },
+  { href: "/projects", label: "Projects", icon: <LiaLaptopCodeSolid size={25} /> },
   { href: "/listensto", label: "ListensTo", icon: <FiHeadphones size={20} /> },
 ];
 
@@ -32,7 +35,7 @@ export const NavLinks = () => {
                 </button>
               </Link>
               {/* Tooltip */}
-              <div className="dark:bg-slate-8 00 bg-zinc-700 absolute -left-7 top-full ml-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-white text-sm px-3 py-1 rounded-lg shadow-lg">
+              <div className="dark:bg-slate-800 bg-zinc-700 absolute -left-7 top-full ml-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-white text-sm px-3 py-1 rounded-lg shadow-lg">
                 {link.label}
               </div>
             </div>

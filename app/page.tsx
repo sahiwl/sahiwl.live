@@ -1,10 +1,13 @@
 import "@fontsource/proza-libre";
 import Projects from "./projects/page";
 import { Skills } from "@/components/Skills";
+import Head from "next/head";
+import Link from "next/link";
 export default function Home() {
   return (
+
     <div className="pt-32 mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
-      <div className=" text-slate-900 w-full">
+      <div className=" w-full">
         <section className=" dark:text-[#acbacf] flex h-[100vh]">
           <div className="flex-auto w-64 py-20 ">
             <h1 className="text-3xl md:text-9xl font-spacegrotesk">
@@ -60,5 +63,6 @@ export default function Home() {
         <Projects />
       </div>
     </div>
+
   );
 }

@@ -1,31 +1,46 @@
 import Image from "next/image";
+import allProjects from "../../lib/allProjects";
+import { FiGithub } from "react-icons/fi";
+import { IoIosLink } from "react-icons/io";
 
 // "use client";
-
 export default function Projects() {
   return (
     <section className="p-20">
       <div className="flex flex-col justify-center items-center">
 
+        {allProjects.map((data,index)=>{
+          return(
       <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
-          <div className="md:w-1/2">
-            <h3 className="text-3xl p-3 font-exo2"> Readily</h3>
+          <div  key={index} className="md:w-1/2">
+          <div className="">
+
+            <h3 className="text-3xl p-3 font-exo2"> {data.name}</h3>
             <p className="block">
-            Readily is a modern, full-stack bookstore web application built with Next.js, React, and JavaScript on the frontend, and a robust backend powered by Node.js with RESTful APIs. It integrates MongoDB for seamless book management and user data, deployed on Vercel for scalability and performance.
+           {data.description}
               <br />
-              <a
-                href="https://sahiwl-readily.vercel.app/"
-                target="/blank"
-                className="underline"
-              >
-                Live Link&nbsp;
-              </a>
-            </p>
+                </p>
           </div>
+              <div className="p-2 pt-5 flex w-28 md:w-32 justify-between bg-gren-900">
+              <a
+                href={data.appLink}
+                target="/blank"
+                >
+                <IoIosLink size={30} className="pb-1" />
+              </a>
+              <a 
+              href={data.gitLink}
+              target="/blank"
+                >
+                <FiGithub size={25} className=""/>
+              </a>
+                  </div>                  
+          </div>
+
           <div className="md:w-1/2 py-5">
             <Image
               className="rounded"
-              src={"/Readily.png"}
+              src={data.image}
               height="400"
               width="400"
               alt=""
@@ -33,69 +48,12 @@ export default function Projects() {
             />
           </div>
         </div>
-
-        <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
-          <div className="md:w-1/2">
-            <h3 className="text-3xl font-exo2 p-3">WeatherApp</h3>
-            <p className="block">
-              A simple weather app that gives you real-time weather info for any
-              city. Built with Vite and React, it’s got a clean UI and fetches
-              data instantly so you can plan your day. Deployed on Vercel for
-              easy access.
-              <br />
-              <a
-                href="https://howistheweather.vercel.app/"
-                target="/blank"
-                className="underline"
-              >
-                Live Link
-              </a>
-            </p>
-          </div>
-          <div className="md:w-1/2 py-5">
-            <Image
-              className="rounded-xl"
-              src={"/wapp.jpg"}
-              height="400"
-              width="400"
-              alt=""
-              priority
-            />
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
-          <div className="md:w-1/2">
-            <h3 className="text-3xl font-exo2 p-3"> To-Do List App</h3>
-            <p className="block">
-              A minimalist to-do list app to help keep track of daily tasks.
-              Built with Vite and React, it’s fast and super easy to use.
-              Deployed on Vercel for quick access anytime.
-              <br />
-              <a
-                href="https://sahiwl-todo.vercel.app/"
-                target="/blank"
-                className="underline"
-              >
-                Live Link{" "}
-              </a>
-            </p>
-          </div>
-          <div className="md:w-1/2 py-5">
-            <Image
-              className="rounded"
-              src={"/todoapp.png"}
-              height="400"
-              width="400"
-              alt=""
-              priority
-            />
-          </div>
-        </div>
-        
-
-        
-      </div>
+          )
+        })
+      }
+           
+</div>
     </section>
   );
 }
-;
+

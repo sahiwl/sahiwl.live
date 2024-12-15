@@ -64,6 +64,14 @@ export const allSkills : SkillArr = [
     {
         name: "Cloudflare",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg"
+    },
+    {
+        name: "Python",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
+        name: "Linux",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
     }
 ]
 
