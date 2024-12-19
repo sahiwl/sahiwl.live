@@ -81,7 +81,7 @@ export default function about() {
 
             <h4 className="mt-12">setup</h4>
                 <p>
-                  simple setup 
+                  <span>Macbook Air M2</span>
                 </p>
 
 

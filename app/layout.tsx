@@ -30,11 +30,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        {/* <div className="overflow-hidden min-h-[100vh] dark:bg-spaceblack bg-white-200"> */}
+        <main className="overflow-hidden">
           <Navbar/>
           {children}
           <Footer />
-        {/* </div> */}
+        </main>
         </ThemeProvider>
       </body>
     </html>

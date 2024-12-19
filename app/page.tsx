@@ -7,9 +7,9 @@ export default function Home() {
   return (
 
     <div className="pt-32 mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
-      <div className=" w-full">
-        <section className=" dark:text-[#acbacf] flex h-[100vh]">
-          <div className="flex-auto w-64 py-20 ">
+      <main className=" w-full">
+        <section className=" dark:text-[#acbacf] flex">
+          <div className="flex-auto w-64 pt-20 ">
             <h1 className="text-3xl md:text-9xl font-spacegrotesk">
               Hii, it's
             </h1>
@@ -25,7 +25,7 @@ export default function Home() {
                   technologies like JavaScript, Next.js, TypeScript and Python.
                 </li>
                 <li>
-                  Always up for joining conferences, hackathons, clubs etc{" "}
+                  Always up for joining conferences, hackathons, clubs etc &nbsp;
                   <a
                     href="https://discord.com/users/550329365444034561"
                     target="/blank"
@@ -33,10 +33,12 @@ export default function Home() {
                     <span className="relative mr-3">
                       hmu <span className="absolute -top-2 -ml-2">&#8599;</span>
                     </span>
-                  </a>{" "}
+                  </a>
                   for collaborations on such events.
                 </li>
+                
               </ul>
+
             </div>
           </div>
           <div className="flex-auto w-16 mx-auto">
@@ -52,12 +54,19 @@ export default function Home() {
                 />
               </div>
             </aside>
+            <aside className="relative right-10 translate-y-16 md:left-1/2 md:-translate-x-10 md:translate-y-44 ">
+                    <Link className="hover:underline text-cyan-500 font-spacegrotesk text-2xl" href="resume.pdf">
+                    Resume
+                    {/*   <span className="absolute -top-2 text-sm">&#8599;</span> */}
+                    </Link>
+
+            </aside>
           </div>
         </section>
 
         {/* Skills */}
         <Skills />
-      </div>
+      </main>
       <div className="m-auto ">
         <h1 className="text-6xl md:text-8xl font-exo2 text-center">Projects</h1>
         <Projects />

@@ -1,12 +1,11 @@
 "use client";
-import About from "@/app/about/page";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FaLaptopCode, FaLink, FaUser } from "react-icons/fa";
 import { FiHeadphones, FiSun } from "react-icons/fi";
-import { PiMoonFill } from "react-icons/pi";
+import { PiMoonDuotone, PiMoonFill } from "react-icons/pi";
 import { LuUser } from "react-icons/lu";
 import { IoIosLink } from "react-icons/io";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
@@ -27,7 +26,7 @@ export const NavLinks = () => {
       >
         {navLinks.map((link, index) => (
           <li key={index}>
-            <div className="relative inline-flex items-center group">
+            <div className="relative inline-flex py-1 items-center group hover:scale-110 duration-300 ease-in-out">
               {/* Button */}
               <Link href={link.href}>
                 <button className="rounded-lg flex items-center justify-center">
@@ -60,22 +59,22 @@ export const Navbar = function () {
     setMounted(true);
   }, []);
   return (
-    <article className="">
-      <div className="bg-cyan-900/55 top-0 w-full fixed ">i</div>
-      <section
+    <article className="w-full flex gap-4 justify-center mb-6 p-2">
+      {/* <div className="bg-cyan-900/55 top-0 w-full fixed ">i</div> */}
+      {/* <section
         className={`dark:border-cyan-400 border-b-2 text-center md:px-16 w-full px-10 md:py-6 fixed top-0 z-30 py-4 backdrop-blur-lg bg-opacity-100 ${
           isOpen ? "h-auto" : "h-20"
         }`}
-      >
-        {" "}
-        <div className="flex items-center justify-between mx-auto max-w-6xl text-[#00ADB5]">
-          <div className="img ">
+      > */}
+<section className="w-1/2 p-2 rounded-lg mb-12 fixed top-4 z-[100] border-[1px] shadow-xl dark:border-neutral-800 border-neutral-200 backdrop-blur-md">
+        <div className="flex items-center justify-between mx-auto w-full text-[#00ADB5] px-2">
+          <div className="hover:scale-110 duration-300 ease-in-out -translate-y-0.5">
             <Link href="/">
               <h1 className="font-exo2">sahiwl</h1>
             </Link>
           </div>
           {/* <nav className=""> */}
-          <nav className=" w-1/3 justify-end">
+          <nav className=" w-1/3 py-1  justify-end">
             <div className="hidden justify-around md:flex">
               <NavLinks />
             </div>
@@ -88,11 +87,11 @@ export const Navbar = function () {
           <div className="">
             {mounted === true && (
               <button
-                // dark:bg-zinc-800 dark:hover:bg-zinc-700 bg-zinc-700 hover:bg-zinc-800
-                className="w-full flex justify-center items-center shadow  bg-gray-400 dark:bg-transparent hover:shadow-xl rounded hover:scale-110 duration-300 ease-in-out"
+                // dark:bg-zihover:scale-110 duration-300 ease-in-outnc-800 dark:hover:bg-zinc-700 bg-zinc-700 hover:bg-zinc-800
+                className="w-full flex justify-center items-center shadow dark:bg-transparent hover:shadow-xl rounded "
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <div className="p-2 text-zinc-100">
+                <div className="p-2">
                   {theme === "dark" ? <FiSun /> : <PiMoonFill />}
                 </div>
               </button>

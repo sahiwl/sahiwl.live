@@ -2,7 +2,7 @@ import { allSkills } from "@/lib/skills";
 
 export const Skills = function () {
   return (
-    <div className="">
+    <div className="py-20">
       <h1 className="my-5 pt-5 text-6xl md:text-8xl font-exo2 text-center">
        Skills
       </h1>

@@ -6,13 +6,13 @@ import { IoIosLink } from "react-icons/io";
 // "use client";
 export default function Projects() {
   return (
-    <section className="p-20">
+    <div className="p-20">
       <div className="flex flex-col justify-center items-center">
 
         {allProjects.map((data,index)=>{
           return(
-      <div className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
-          <div  key={index} className="md:w-1/2">
+      <div key={index} className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
+          <div   className="md:w-1/2">
           <div className="">
 
             <h3 className="text-3xl p-3 font-exo2"> {data.name}</h3>
@@ -53,7 +53,7 @@ export default function Projects() {
       }
            
 </div>
-    </section>
+    </div>
   );
 }
 

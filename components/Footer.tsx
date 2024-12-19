@@ -1,6 +1,7 @@
 export const Footer = () => {
     return (
-        <div className="p-10 w-full max-h-[330px] bottom-0 dark:border-cyan-400 border-t-2 flex justify-around">
+        // <div className="p-10 w-full max-h-[330px] bottom-0 dark:border-cyan-400 border-t-2 flex justify-around">
+        <div className="flex px-4 py-4 justify-around w-full border-t border-cyan-400" >
             <span className="text-zinc-500">
                 &copy;Sahil Kumar Ray 2024 All Rights Reserved
             </span>

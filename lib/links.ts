@@ -1,9 +1,12 @@
 import { ReactElement } from "react";
 import { IconType } from "react-icons";
 import { AiOutlineSpotify } from "react-icons/ai";
+import { CiMail } from "react-icons/ci";
 import { FaDiscord } from "react-icons/fa";
+import { FaLetterboxd } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { ImLastfm } from "react-icons/im";
+import { IoMailOutline } from "react-icons/io5";
 import { PiRedditLogo } from "react-icons/pi";
 import { RxDiscordLogo } from "react-icons/rx";
 import { SlSocialTwitter } from "react-icons/sl";
@@ -26,8 +29,8 @@ export const allLinks :Links = [
     },
     {
         name: "Reddit",
-        url: "https://www.reddit.com/user/Sahilkek1/",
-        value: "@sahilkek1",
+        url: "https://www.reddit.com/user/prowlerbynight",
+        value: "@prowlerbynight",
                 icon: PiRedditLogo
 
     },
@@ -59,5 +62,18 @@ export const allLinks :Links = [
                 icon: AiOutlineSpotify
 
     },
+    {
+        name: "letterboxd",
+        url:"https://letterboxd.com/saahilkr",
+        value: "@saahilkr",
+        icon: FaLetterboxd
+    },
+    // {
+    //     name: "mail",
+    //     url: "",
+    //     value: "@sahilkrray1",
+    //     icon: IoMailOutline
+
+    // }
     
 ]
