@@ -1,15 +1,12 @@
-import { ReactElement } from "react";
 import { IconType } from "react-icons";
 import { AiOutlineSpotify } from "react-icons/ai";
-import { CiMail } from "react-icons/ci";
-import { FaDiscord } from "react-icons/fa";
 import { FaLetterboxd } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { ImLastfm } from "react-icons/im";
 import { IoMailOutline } from "react-icons/io5";
 import { PiRedditLogo } from "react-icons/pi";
 import { RxDiscordLogo } from "react-icons/rx";
-import { SlSocialTwitter } from "react-icons/sl";
+import { SlSocialLinkedin, SlSocialTwitter } from "react-icons/sl";
 
 export type Link = {
     name: string,
@@ -21,6 +18,19 @@ export type Link = {
 export type Links = Link[];
 
 export const allLinks :Links = [
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/sahilkr04",   
+        value: "@sahilkr04",
+        icon: SlSocialLinkedin
+    },
+    {
+        name: "mail",
+        url: "mailto:work.saahilkr@gmail.com",
+        value: "@work.saahilkr",
+        icon: IoMailOutline
+
+    },
     {
         name: "Discord",
         url: "https://discord.com/users/550329365444034561",
@@ -67,13 +77,5 @@ export const allLinks :Links = [
         url:"https://letterboxd.com/saahilkr",
         value: "@saahilkr",
         icon: FaLetterboxd
-    },
-    // {
-    //     name: "mail",
-    //     url: "",
-    //     value: "@sahilkrray1",
-    //     icon: IoMailOutline
-
-    // }
-    
+    }
 ]

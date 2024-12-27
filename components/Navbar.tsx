@@ -3,9 +3,8 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { FaLaptopCode, FaLink, FaUser } from "react-icons/fa";
 import { FiHeadphones, FiSun } from "react-icons/fi";
-import { PiMoonDuotone, PiMoonFill } from "react-icons/pi";
+import { PiMoonFill } from "react-icons/pi";
 import { LuUser } from "react-icons/lu";
 import { IoIosLink } from "react-icons/io";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
@@ -22,7 +21,7 @@ export const NavLinks = () => {
   return (
     <div>
       <ul
-        className="md:flex md:items-center text-[#00ADB5] sm:flex-wrap md:justify-around gap-x-6 gap-y-4"
+        className="md:flex md:items-center dark:text-[#00ADB5] text-[#4e201c] sm:flex-wrap md:justify-around gap-x-6 gap-y-4"
       >
         {navLinks.map((link, index) => (
           <li key={index}>
@@ -67,7 +66,7 @@ export const Navbar = function () {
         }`}
       > */}
 <section className="w-1/2 p-2 rounded-lg mb-12 fixed top-4 z-[100] border-[1px] shadow-xl dark:border-neutral-800 border-neutral-200 backdrop-blur-md">
-        <div className="flex items-center justify-between mx-auto w-full text-[#00ADB5] px-2">
+        <div className="flex items-center justify-between mx-auto w-full dark:text-[#00ADB5] text-[#4e201c] px-2">
           <div className="hover:scale-110 duration-300 ease-in-out -translate-y-0.5">
             <Link href="/">
               <h1 className="font-exo2">sahiwl</h1>
@@ -100,7 +99,7 @@ export const Navbar = function () {
         </div>
         {/* Mobile navigation links - visible when isOpen is true */}
         {isOpen && (
-          <div className=" md:hidden flex basis-full flex-col items-center">
+          <div className="md:hidden flex basis-full flex-col items-center">
             <NavLinks />
           </div>
         )}

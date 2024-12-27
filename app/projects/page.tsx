@@ -12,7 +12,7 @@ export default function Projects() {
         {allProjects.map((data,index)=>{
           return(
       <div key={index} className="flex flex-col lg:flex-row my-[2.5rem] gap-x-[16rem]">
-          <div   className="md:w-1/2">
+          <div className="md:w-1/2">
           <div className="">
 
             <h3 className="text-3xl p-3 font-exo2"> {data.name}</h3>

@@ -55,7 +55,7 @@ export default function Home() {
               </div>
             </aside>
             <aside className="relative right-10 translate-y-16 md:left-1/2 md:-translate-x-10 md:translate-y-44 ">
-                    <Link className="hover:underline text-cyan-500 font-spacegrotesk text-2xl" href="resume.pdf">
+                    <Link className="hover:underline dark:text-cyan-500  text-yellow-800 font-spacegrotesk text-2xl" href="resume.pdf">
                     Resume
                     {/*   <span className="absolute -top-2 text-sm">&#8599;</span> */}
                     </Link>
@@ -68,7 +68,7 @@ export default function Home() {
         <Skills />
       </main>
       <div className="m-auto ">
-        <h1 className="text-6xl md:text-8xl font-exo2 text-center">Projects</h1>
+        <h1 className="text-6xl md:text-8xl font-exo2 text-center dark:text-[#acbacf] text-[#4e201c]">Projects</h1>
         <Projects />
       </div>
     </div>

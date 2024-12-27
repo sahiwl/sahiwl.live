@@ -3,7 +3,7 @@ import { allSkills } from "@/lib/skills";
 export const Skills = function () {
   return (
     <div className="py-20">
-      <h1 className="my-5 pt-5 text-6xl md:text-8xl font-exo2 text-center">
+      <h1 className="my-5 pt-5 text-6xl md:text-8xl dark:text-[#acbacf] text-[#4e201c] font-exo2 text-center">
        Skills
       </h1>
       <div className="w-full flex flex-wrap justify-evenly items-center md:justify-start md:gap-x-1 md:items-start mb-20">

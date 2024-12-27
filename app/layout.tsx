@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     //removed suppressHydrationWarning={true} in html tag
     <html lang="en" suppressHydrationWarning={true} className={`${sometypemono.variable} ${inter.variable} ${exo2.variable} ${sono.variable} ${spacegrotesk.variable}`}>       
-      <body className="font-sometypemono dark:bg-zinc-900 bg-slate-200">
+      <body className="font-sometypemono dark:bg-zinc-900 bg-[#eae5db]">
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
