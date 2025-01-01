@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function Home() {
   return (
 
-    <div className="pt-32 mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
-      <main className=" w-full">
+    <main className="pt-32 mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
+      <div className=" w-full">
         <section className=" dark:text-[#acbacf] flex">
           <div className="flex-auto w-64 pt-20 ">
             <h1 className="text-3xl md:text-9xl font-spacegrotesk">
@@ -66,12 +66,12 @@ export default function Home() {
 
         {/* Skills */}
         <Skills />
-      </main>
+      </div>
       <div className="m-auto ">
         <h1 className="text-6xl md:text-8xl font-exo2 text-center dark:text-[#acbacf] text-[#4e201c]">Projects</h1>
         <Projects />
       </div>
-    </div>
+    </main>
 
   );
 }

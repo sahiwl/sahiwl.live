@@ -21,7 +21,7 @@ const allProjects : ProjectTypeShiArr = [
         name: "Portfolio Website",
         description: "This portfolio website showcases my work and skills as a web developer. It’s built with Next.js and Tailwind CSS for a sleek, modern design and optimized performance. The site features a responsive layout, interactive components, and smooth navigation to highlight my projects and expertise.",
         appLink: "https://sahiwl.vercel.app/",
-        gitLink: "https://github.com/sahiwl/readily",
+        gitLink: "https://github.com/sahiwl/website",
         image: "/portWeb.png"
     },
     {

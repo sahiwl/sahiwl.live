@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Footer } from "@/components/Footer";
 
 import { exo2, inter, sometypemono, sono, spacegrotesk } from "@/lib/fonts";
+import Cursor from "@/components/Cursor";
 
 export const metadata: Metadata = {
   title: "sahiwl",
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     //removed suppressHydrationWarning={true} in html tag
     <html lang="en" suppressHydrationWarning={true} className={`${sometypemono.variable} ${inter.variable} ${exo2.variable} ${sono.variable} ${spacegrotesk.variable}`}>       
-      <body className="font-sometypemono dark:bg-zinc-900 bg-[#eae5db]">
+      <body className="font-sometypemono dark:bg-zinc-900 bg- bg-[#eae5db]">
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -32,6 +33,8 @@ export default function RootLayout({
           >
         <main className="overflow-hidden">
           <Navbar/>
+          
+          <Cursor/>
           {children}
           <Footer />
         </main>
