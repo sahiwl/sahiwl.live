@@ -6,11 +6,11 @@
 
 @layer base{
     h3{
-        @apply md:text-5xl dark:text-[#03A688] text-6xl font-bold my-6;
+        @apply md:text-5xl dark:text-[#03A688] text-6xl font-bold my-6 font-exo2;
     } 
 
     h4{
-        @apply text-2xl dark:text-[#5C8374] font-semibold;
+        @apply text-2xl dark:text-[#5C8374] font-semibold font-exo2;
     }
 
     p{

@@ -40,8 +40,9 @@ idk.tsx
 skills1.tsx
 
 .env
-
-
+app/darul
+app/fortest
+.vscode
 ##spotify stats
 # listensto
 # actions.ts

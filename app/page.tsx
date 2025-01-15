@@ -42,7 +42,6 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-auto w-16 mx-auto">
-            <img src="" alt="" />
             <aside className="justify-self-start gap-y-8">
               <div id="img" className="md:mx-20 md:visible invisible">
                 <img
