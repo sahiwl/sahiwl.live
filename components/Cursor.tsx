@@ -15,7 +15,7 @@ export default function Cursor() {
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
       setMousePos([e.clientX, e.clientY]);
-    };
+    };  
 
     window.addEventListener("mousemove", mouseMove);
     return () => {
