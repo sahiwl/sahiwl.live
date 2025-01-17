@@ -3,13 +3,18 @@ import Projects from "./projects/page";
 import { Skills } from "@/components/Skills";
 import Head from "next/head";
 import Link from "next/link";
+import Welcome from "@/components/Welcome";
+
 export default function Home() {
   return (
 
     <main className="mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
       <div className=" w-full">
         <section className=" dark:text-[#acbacf] flex">
-          <div className="flex-auto w-64 pt-20 ">
+          <Welcome />
+
+          {/* Old Landing Page */}
+          {/* <div className="flex-auto w-64 pt-20 ">
             <h1 className="text-3xl md:text-9xl font-spacegrotesk">
               Hii, it's
             </h1>
@@ -42,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-auto w-16 mx-auto">
-            {/* <aside className="justify-self-start gap-y-8">
+            <aside className="justify-self-start gap-y-8">
               <div id="img" className="md:mx-20 md:visible invisible">
                 <img
                   className="rounded-full mx-auto"
@@ -52,15 +57,14 @@ export default function Home() {
                   alt=""
                 />
               </div>
-            </aside> */}
+            </aside>
             <aside className="relative right-10 translate-y-16 md:left-1/2 md:-translate-x-10 md:translate-y-44 ">
                     <Link className="hover:underline dark:text-cyan-500  text-yellow-800 font-spacegrotesk text-2xl" href="resume.pdf">
                     Resume
-                    {/*   <span className="absolute -top-2 text-sm">&#8599;</span> */}
                     </Link>
 
             </aside>
-          </div>
+          </div> */}
         </section>
 
         {/* Skills */}

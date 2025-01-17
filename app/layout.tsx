@@ -5,9 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Footer } from "@/components/Footer";
 import { exo2, inter, sometypemono, sono, spacegrotesk } from "@/lib/fonts";
-import Cursor from "@/components/Cursor";
+import Cursor from "@/components/ui/Cursor";
 import CMDBar from "@/components/CMDBar";
-import { KBarProviderWrapper } from "@/components/KBarProvider";
+import { KBarProviderWrapper } from "@/components/ui/KBarProvider";
 import { MobileNav } from "@/components/MobileNavbar";
 
 export const metadata: Metadata = {
