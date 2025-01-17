@@ -11,7 +11,7 @@ import {
     useMatches,
   } from "kbar";
   import React, { HTMLAttributes } from "react";
-import { KBarProviderWrapper } from "./KBarProvider";
+import { KBarProviderWrapper } from "./ui/KBarProvider";
 
   interface CommandBarProps extends HTMLAttributes<HTMLElement> {
     actions: Action[];
