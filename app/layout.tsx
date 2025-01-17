@@ -4,11 +4,11 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Footer } from "@/components/Footer";
-import { KBarProvider } from "kbar";
 import { exo2, inter, sometypemono, sono, spacegrotesk } from "@/lib/fonts";
 import Cursor from "@/components/Cursor";
 import CMDBar from "@/components/CMDBar";
 import { KBarProviderWrapper } from "@/components/KBarProvider";
+import { MobileNav } from "@/components/MobileNavbar";
 
 export const metadata: Metadata = {
   title: "sahiwl",
@@ -42,6 +42,7 @@ export default function RootLayout({
               <CMDBar actions={[]} />
             <main className="overflow-hidden">
               <Navbar />
+              <MobileNav/>  
               <Cursor />
               {children}
               <Footer />
