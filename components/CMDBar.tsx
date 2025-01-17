@@ -12,7 +12,7 @@ import {
   } from "kbar";
   import React, { HTMLAttributes } from "react";
 import { KBarProviderWrapper } from "./ui/KBarProvider";
-
+  
   interface CommandBarProps extends HTMLAttributes<HTMLElement> {
     actions: Action[];
   }
@@ -35,20 +35,14 @@ import { KBarProviderWrapper } from "./ui/KBarProvider";
     );
   };
   const KBarSearchWrapper = React.forwardRef<HTMLInputElement>((props, ref) => {
-      const { query } = useKBar();
-      const inputRefSetter = (el: HTMLInputElement) => {
-        if (typeof ref === 'function') {
-          ref(el);
-        } else if (ref) {
-          (ref as React.MutableRefObject<HTMLInputElement | null>).current = el;
-        }
-      };
+    const { query } = useKBar();  
   
     return (
       <KBarSearch
         {...props}
         className="w-full outline-none px-6 py-4 text-black"
-        ref={inputRefSetter} // Attach the ref here
+        // @ts-ignore
+        ref={query.inputRefSetter} // Attach the ref here
       />
     );
   });
