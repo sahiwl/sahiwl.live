@@ -16,11 +16,11 @@ export const MobileNav = () => {
 
   return (
     <div className="block md:hidden">
-      <nav className="fixed bottom-0 w-full p-2 dark:bg-zinc-900/80 z-[100] rounded-lg border-[1px] shadow-xl dark:border-neutral-800 border-neutral-200 backdrop-blur-md ">
+      <nav className="fixed bottom-0 w-full p-2 dark:bg-zinc-900/80 z-[100] rounded-t-2xl border-[1px]  dark:border-neutral-800 border-neutral-400 backdrop-blur-md ">
         <div className="flex justify-around items-center">
           {navLinks.map((link, index) => (
-            <Link key={index} href={link.href}>
-              <div className="flex flex-col items-center justify-center text-[#4e201c] dark:text-[#00ADB5] hover:scale-110 duration-300 ease-in-out">
+            <Link key={index} className="button-navm" href={link.href}>
+              <div className="flex flex-col items-center justify-center text-[#4e201c] dark:text-[#00ADB5]">
                 <div>{link.icon}</div>
                 <span className="text-xs mt-1">{link.label}</span>
               </div>

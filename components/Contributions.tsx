@@ -17,7 +17,6 @@ export default function ContributionGraph() {
   const scheme =
     theme === "light" ? "light" : theme === "dark" ? "dark" : systemTheme;
 
-
   useEffect(() => {
     setServerTheme(scheme);
   }, [scheme]);
@@ -28,21 +27,21 @@ export default function ContributionGraph() {
   return (
     <div className="flex flex-col items-center gap-4 w-full">
       {/* GitHub Contributions Graph */}
-      <div className="border dark:border-zinc-800 border-zinc-200 p-8 rounded-lg max-w-fit max-h-fit">
+      <div className="border dark:border-zinc-800 border-zinc-200 p-4 md:p-8 rounded-lg max-w-full overflow-x-auto">
         <GitHubCalendar
           username={username}
           theme={github}
           colorScheme={serverTheme}
-          blockSize={10}
+          blockSize={8} // Reduced block size for smaller screens
           year={calendarYear}
           style={{
-            color: serverTheme === "light" ? "black" : "white", 
+            color: serverTheme === "light" ? "black" : "white",
           }}
         />
       </div>
 
       {/* Years Grid at the Bottom */}
-      <div className="flex justify-center mt-4 space-x-4">
+      <div className="flex flex-wrap justify-center mt-4 gap-2">
         {years.map((year) => (
           <div
             key={year}

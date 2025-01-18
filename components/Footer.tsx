@@ -9,7 +9,7 @@
                 made by sahil 😉
                 </span>
                 <span className="flex space-x-5 text-zinc-500 font-exo2 font-semibold">
-                    <Link href="/links" aria-label="Read more about Seminole tax hike" className="hover:underline">connect with me!!</Link>                   
+                    <Link href="/links" aria-label="Read more about Seminole tax hike" className=" transition hover:scale-110 duration-300 ease-in-out">connect with me!!</Link>                   
                 </span>
             </footer>
         )
