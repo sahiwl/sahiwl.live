@@ -4,6 +4,7 @@ import { Skills } from "@/components/Skills";
 import Head from "next/head";
 import Link from "next/link";
 import Welcome from "@/components/Welcome";
+import ContributionGraph from "@/components/Contributions";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className=" w-full">
         <section className=" dark:text-[#acbacf] flex">
           <Welcome />
+          
 
           {/* Old Landing Page */}
           {/* <div className="flex-auto w-64 pt-20 ">
@@ -68,6 +70,8 @@ export default function Home() {
         </section>
 
         {/* Skills */}
+              <ContributionGraph/>
+        
         <Skills />
       </div>
       <div className="m-auto ">

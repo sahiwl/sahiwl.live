@@ -20,21 +20,19 @@ export default function Welcome() {
         <div className="flex justify-center gap-4">
           <Link
             href="/links"
-            className="px-6 py-2 border border-white rounded-lg hover:bg-white hover:text-black transition duration-300"
+            className="button-hover"
           >
             Get in Touch
           </Link>
+          {/* <button className="default-link-button">standard</button> */}
           <Link
             href="/projects"
-            className="px-6 py-2 border border-white rounded-lg hover:bg-white hover:text-black transition duration-300"
+            className="button-hover"
           >
             View Projects
           </Link>
         </div>
       </div>
-<div className="w-full p-4">
-      <ContributionGraph/>
-</div>
 
     </div>
   );
