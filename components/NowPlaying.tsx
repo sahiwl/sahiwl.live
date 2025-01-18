@@ -15,7 +15,7 @@ export function NowPlaying() {
     fetchData();
   }, []);
   return (
-    <section className="flex flex-col gap-4 mt-16 lg:mt-0 md:mt-0 justify-between items-center w-3/4 pt-10 prose font-exo2">
+    <section className="flex flex-col gap-4 mt-16 lg:mt-0 md:mt-0 justify-between items-center w-3/4 md:pt-10 prose font-exo2">
       {data.length > 0 && (
         <div className="flex flex-col gap-2 w-full md:w-1/2 p-4 rounded-lg bg-gradient-to-r  dark:from-[#18181b] dark:via-custom-dark dark:to-neutral-900 dark:border-neutral-800 border-neutral-200 border-[1px] shadow-2xl">
           <div className="flex flex-row justify-between">

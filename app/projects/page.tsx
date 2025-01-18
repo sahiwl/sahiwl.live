@@ -6,7 +6,7 @@ import { IoIosLink } from "react-icons/io";
 // "use client";
 export default function Projects() {
   return (
-    <div className="p-20">
+    <div className="px-20 pb-20 md:pt-20">
       <div className="flex flex-col justify-center items-center">
 
         {allProjects.map((data,index)=>{
