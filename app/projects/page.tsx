@@ -22,13 +22,13 @@ export default function Projects() {
                     <br />
                   </p>
                 </div>
-                <div className="flex flex-wrap -ml-4">
+                <div className="flex  flex-wrap -ml-4">
                     {data.skills.map((skills, index)=>(
                      <div
                      key={index}
                      className="flex flex-col pt-2 transition-all ease-in-out text-center duration-300 mx-2"
                    >
-                     <div className="h-20 w-20 md:h-12 md:w-12 rounded-full backdrop-blur-3xl dark:bg-slate-800 bg-black/10 grid place-items-center hover:-translate-y-3 transition-all md:m-4 m-2 duration-200">
+                     <div className="h-12 w-12 md:h-16 md:w-16 rounded-full backdrop-blur-3xl dark:bg-slate-800 bg-black/10 grid place-items-center hover:-translate-y-3 transition-all md:m-4 m-2 duration-200">
                        <img src={skills.url}
                          height="25"
                          width="25"
