@@ -16,7 +16,8 @@ const config = {
         inter: ['var(--font-Inter)'],
         exo2: ['var(--font-exo2)'],
         sono: ['var(--font-sono)'],
-        sometypemono: ['var(--font-sometypemono)']
+        sometypemono: ['var(--font-sometypemono)'], 
+        oswald: ['var(--font-oswald)']
       },
       colors: {
         'custom-dark': '#222831',
@@ -25,10 +26,7 @@ const config = {
       },
     },
   },
-  // plugins: [
-  //   require('@tailwindcss/typography')
-  // ],
-  darkMode: "class"
+  darkMode: 'class'
 }
 
 export default config

@@ -3,11 +3,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/sections/Footer";
 import { exo2, inter, sometypemono, sono, spacegrotesk } from "@/lib/fonts";
 import Cursor from "@/components/ui/Cursor";
 import NextTopLoader from "nextjs-toploader";
 import { MobileNav } from "@/components/MobileNavbar";
+import { Particles } from "@/components/ui/particles";
+import { ThemedParticles } from "@/components/ui/themedParticles";
 
 // export const metadata: Metadata = {
 //   title: "sahiwl",
@@ -68,10 +70,11 @@ export default function RootLayout({
               easing="ease"
               speed={200}
               shadow="0 0 10px #2299DD,0 0 5px #2299DD"
-            />
+              />
             <Navbar />
             <MobileNav />
             <Cursor />
+              <ThemedParticles className="fixed inset-0 -z-10 pointer-events-none"/>
             {children}
             <Footer />
           </main>

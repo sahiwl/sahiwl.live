@@ -1,4 +1,4 @@
-import { Exo_2, Inter, Sometype_Mono, Sono, Space_Grotesk } from "next/font/google";
+import { Exo_2, Inter, Oswald, Sometype_Mono, Sono, Space_Grotesk } from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"], variable: "--font-Inter" });
 export const spacegrotesk = Space_Grotesk({
@@ -11,6 +11,13 @@ export const exo2 = Exo_2({
   subsets: ["latin"],
   style: 'normal',
 variable: "--font-exo2",
+display: "swap"
+})
+
+export const oswald = Exo_2({
+  subsets: ["latin"],
+  style: 'normal',
+variable: "--font-oswald",
 display: "swap"
 })
 

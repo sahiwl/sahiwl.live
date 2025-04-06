@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { FiHeadphones, FiSun } from "react-icons/fi";
 import { PiMoonFill } from "react-icons/pi";
 import { LuUser } from "react-icons/lu";
+import { GrHomeRounded } from "react-icons/gr";
 import { IoIosLink } from "react-icons/io";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { MobileNav } from "./MobileNavbar";
@@ -24,7 +25,7 @@ export const navLinks = [
 export const NavLinks = () => {
   return (
     <div>
-      <ul className="md:flex md:items-center dark:text-[#00ADB5] text-[#4e201c] sm:flex-wrap md:justify-around gap-x-6 gap-y-4">
+      <ul className="md:flex md:items-center dark:text-[#00adb5] text-[#4e201c] sm:flex-wrap md:justify-around gap-x-6 gap-y-4">
         {navLinks.map((link, index) => (
           <li key={index}>
             <div className="relative inline-flex py-1 items-center group hover:scale-110 duration-300 ease-in-out">
