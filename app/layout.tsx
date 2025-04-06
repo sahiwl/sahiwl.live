@@ -9,12 +9,38 @@ import Cursor from "@/components/ui/Cursor";
 import NextTopLoader from "nextjs-toploader";
 import { MobileNav } from "@/components/MobileNavbar";
 
-export const metadata: Metadata = {
-  title: "sahiwl",
-  description: "Made with <3 by Sahil Kumar Ray",
-  icons: {
-    icon: "/Website/app/favicon.ico",
+// export const metadata: Metadata = {
+//   title: "sahiwl",
+//   description: "Made with <3 by Sahil Kumar Ray",
+//   icons: {
+//     icon: "/Website/app/favicon.ico",
+//   },
+// };
+
+export const metadata = {
+  title: "Sahil Kumar Ray - Developer Portfolio",
+  description: "Full stack developer and oss enthusiast. Building web applications, web interfaces and learning over time. Just a  student who enjoys tech.",
+  keywords: ["sahiwl", "sahil kumar ray", "sahiwl portfolio", "sahiwl nextjs"],
+  openGraph: {
+    title: "Sahil Kumar Ray",
+    description: "Full stack developer and oss enthusiast.",
+    url: "https://sahiwl.live",
+    siteName: "Sahil Kumar Ray || sahiwl",
+    // images: [
+    //   {
+    //     url: "https://yourdomain.com/og-image.png",
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+    type: "website",
   },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Your Page Title",
+  //   description: "Twitter description",
+  //   images: ["https://yourdomain.com/og-image.png"],
+  // },
 };
 
 export default function RootLayout({
