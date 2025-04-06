@@ -18,6 +18,10 @@ export const allSkills : SkillArr = [
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     },
     {
+        src: "https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560",
+        name: "Zustand"
+    },
+    {
         name: "Express",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
     },
@@ -40,6 +44,10 @@ export const allSkills : SkillArr = [
     {
         name: "NodeJS",
         src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
+    },
+    {
+        name: "DaisyUI",
+        src: "https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png"
     },
     {
         name: "TailwindCSS",

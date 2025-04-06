@@ -17,41 +17,6 @@ export type ProjectTypeShiArr = ProjectTypeShi[];
 
 const allProjects : ProjectTypeShiArr = [
     {
-        name: "Readily",
-        description: "Readly is an eCommerce web app where users can explore a wide library of books, add them to their cart, and place orders to have them delivered to their address. It features a smooth shopping experience with user authentication, detailed book pages, and order tracking — making it easy to discover, buy, and enjoy your next read.",
-        appLink: "https://sahiwl-readily.vercel.app/",
-        gitLink: "https://github.com/sahiwl/readily",
-        image: "/Readily.png",
-        skills: [
-            {
-                name:"React",
-                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-            },
-            {
-                name: "Redux",
-                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-            },
-            {
-                name: "MongoDB",
-                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-            },
-            {
-                name: "Node.js",
-                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-            },
-            {
-                name: "Express",
-                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-            },
-            {
-                name: "Tailwind",
-                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-            }
-                
-        
-        ]
-    },
-    {
         name: "SoundLog",
         description: "Welcome to Soundlog, the ultimate social network and music tracking app for album lovers! Inspired by the concept of Letterboxd, Soundlog is your personal space to log, review, and share your album experiences with the world. Whether you're a casual listener or a hardcore audiophile, Soundlog is here to celebrate your love for albums and the stories they tell.",
         appLink: "https://soundlog.sahiwl.live",
@@ -82,10 +47,40 @@ const allProjects : ProjectTypeShiArr = [
                 name: "Express",
                 url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
             },
-                
-        
         ]
-        
+    },
+    {
+        name: "Readily",
+        description: "Readly is an eCommerce web app where users can explore a wide library of books, add them to their cart, and place orders to have them delivered to their address. It features a smooth shopping experience with user authentication, detailed book pages, and order tracking — making it easy to discover, buy, and enjoy your next read.",
+        appLink: "https://sahiwl-readily.vercel.app/",
+        gitLink: "https://github.com/sahiwl/readily",
+        image: "/Readily.png",
+        skills: [
+            {
+                name:"React",
+                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            },
+            {
+                name: "Redux",
+                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+            },
+            {
+                name: "MongoDB",
+                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+            },
+            {
+                name: "Node.js",
+                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+            },
+            {
+                name: "Express",
+                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            },
+            {
+                name: "Tailwind",
+                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            }  
+        ]
     },
     {
         name: "Portfolio Website",
@@ -109,8 +104,7 @@ const allProjects : ProjectTypeShiArr = [
             {
                 name: "Framer-motion",
                 url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"
-            }
-        
+            } 
         ]
     },
     // {
@@ -151,8 +145,6 @@ const allProjects : ProjectTypeShiArr = [
                 name: "Javascript",
                 url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg  "
             }
-                
-        
         ]
     }
   ]
