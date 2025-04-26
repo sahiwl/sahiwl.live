@@ -32,7 +32,7 @@ export const MobileNav = () => {
 
   return (
     <div className="block md:hidden">
-      <nav className="fixed bottom-0 w-full p-2 dark:bg-zinc-900/80 z-[100] rounded-t-2xl border-[1px]  dark:border-neutral-800 border-neutral-400 backdrop-blur-md ">
+      <nav className="fixed bottom-0 w-full p-2 dark:bg-zinc-900/80 z-100 rounded-t-2xl border-[1px]  dark:border-neutral-800 border-neutral-400 backdrop-blur-md ">
         <div className="flex justify-around items-center">
           {mobileNavLinks.map((link, index) => (
             <Link key={index} className="button-navm" href={link.href}>

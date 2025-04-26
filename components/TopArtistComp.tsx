@@ -24,7 +24,7 @@ export default function TopArtistComp() {
           {data.map((artist, index) => (
             <div
               key={index}
-              className="flex gap-2 p-2 rounded-lg shadow-lg border  bg-transparent backdrop-blur-3xl hover:dark:bg-neutral-900 hover:bg-neutral-200 dark:border-neutral-800 border-neutral-300 w-full"
+              className="flex gap-2 p-2 rounded-lg shadow-lg border  bg-transparent backdrop-blur-3xl dark:hover:bg-neutral-900 hover:bg-neutral-200 dark:border-neutral-800 border-neutral-300 w-full"
             >
               {/* <img src={artist.image[1]["#text"]} alt={artist.name} /> */}
               <div className="flex flex-row justify-between items-center font-spacegrotesk w-full gap-2">

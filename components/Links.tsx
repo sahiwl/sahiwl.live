@@ -2,7 +2,7 @@
 import {allLinks} from "../lib/links"
 export default function LinksComp(){
     return (
-        <div className="bg-gradient-to-r bg-grids dark:border-neutral-800 border-neutral-200 shadow-xl min-w-96 rounded-xl ">
+        <div className="bg-linear-to-r bg-grids dark:border-neutral-800 border-neutral-200 shadow-xl min-w-96 rounded-xl ">
             <div className="flex flex-col mx-5 py-5">
             {allLinks.map((link, index) => (
           <div

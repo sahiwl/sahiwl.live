@@ -1,4 +1,3 @@
-
 export type Skills = {
     name: string, 
     url: string
@@ -9,7 +8,7 @@ export type ProjectTypeShi = {
     appLink: string,
     gitLink: string,
     image: string,
-    skills: Skills[]
+    skills?: Skills[] //since im not using this attribute in miniprojects
 }
 
 export type ProjectTypeShiArr = ProjectTypeShi[];
@@ -107,46 +106,8 @@ const allProjects : ProjectTypeShiArr = [
             } 
         ]
     },
-    // {
-    //     name: "To-Do App",
-    //     description: "A minimalist to-do list app to help keep track of daily tasks.Built with Vite and React, it’s fast and super easy to use. Deployed on Vercel for quick access anytime.",
-    //     appLink: "https://sahiwl-todo.vercel.app/",
-    //     gitLink: "https://github.com/sahiwl/Todo-App",
-    //     image: "/todoapp.png",
-    //     skills: [
-    //         {
-    //             url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg",
-    //             name:"React"
-    //         },
-    //         {
-    //             url: "",
-    //             name: "as"
-    //         }
-                
-        
-    //     ]
-    // },
-    {
-        name: "How’s the Weather",
-        description: "How’s the Weather? is a simple and clean weather app that lets users check real-time weather conditions for any city worldwide. Just type in a location to instantly see the current temperature, weather description, and other details — perfect for quick planning on the go.",
-        appLink: "https://howistheweather.vercel.app/",
-        gitLink: "https://github.com/sahiwl/howstheweather",
-        image: "/wapp.jpg",
-        skills: [
-            {
-                url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-                name:"React"
-            },
-            {
-                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-                name: "TailwindCSS"
-            },
-            {
-                name: "Javascript",
-                url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg  "
-            }
-        ]
-    }
+    
+
   ]
 
 export default allProjects;

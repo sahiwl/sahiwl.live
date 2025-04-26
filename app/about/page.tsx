@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image";
 import About from "../../content/about.mdx"
 import Link from "next/link";
+
 export default function about() {
+  const pfpLoader = ({src, quality}: {src: string, quality?: number})=>{
+    return `https://github.com/${src}.png`
+  }
   return (
     <main className="md:py-20 mx-16 md:mx-20 md:my-24 my-20 dark:text-zinc-200 ">
       <section className="grid md:grid-cols-2 grid-rows-1 justify-items-center">
@@ -12,7 +17,8 @@ export default function about() {
         <aside className="flex flex-col md:order-1 md:justify-self-center  justify-self-start gap-y-8">
           <div id="img" className="md:fixed  static md:right-[2%] lg:right-[10%]">
             <Image
-              src="/sahil2.jpeg"
+              loader={pfpLoader}
+              src="sahiwl"
               className="w-[370px] h-[370px] rounded-full overflow-hidden object-cover"
               height="370"
               width="370"

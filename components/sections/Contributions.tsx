@@ -9,7 +9,7 @@ export const github: any = {
 };
 
 export default function ContributionGraph() {
-  const [calendarYear, setCalendarYear] = useState<number | undefined>(2024);
+  const [calendarYear, setCalendarYear] = useState<number | undefined>(2025);
   const { theme, systemTheme } = useTheme();
   const [serverTheme, setServerTheme] = useState<"light" | "dark" | undefined>(
     undefined
@@ -22,7 +22,7 @@ export default function ContributionGraph() {
   }, [scheme]);
 
   const username = "sahiwl";
-  const years = [2025, 2024, 2023, 2022]; // List of years to display
+  const years = [2025, 2024]; 
 
   return (
     <div className="flex flex-col items-center gap-4 w-full">
@@ -32,7 +32,7 @@ export default function ContributionGraph() {
           username={username}
           theme={github}
           colorScheme={serverTheme}
-          blockSize={8} // Reduced block size for smaller screens
+          blockSize={8} 
           year={calendarYear}
           style={{
             color: serverTheme === "light" ? "black" : "white",

@@ -4,24 +4,20 @@ import { Skills } from "@/components/sections/Skills";
 import Welcome from "@/components/sections/Welcome";
 import ContributionGraph from "@/components/sections/Contributions";
 
-
 export default function Home() {
   return (
-
-    <main className="mx-5 lg:mx-20 flex flex-col items-start min-h-[100vh]">
-      <div className=" w-full">
-          <Welcome />
-        {/* Skills */}
-        <div className="pt-8"></div>
-              <ContributionGraph/>
+    <main className="flex flex-col items-center w-full min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <Welcome />
         
-        <Skills />
-      </div>
-      <div className="m-auto ">
-        <h1 className="text-6xl md:text-8xl font-exo2 text-center dark:text-[#acbacf] text-[#4e201c]">Projects</h1>
-        <Projects />
+        <div className="py-16">
+          <ContributionGraph />
+        </div>
+        
+        <div className="py-16">
+          <Skills />
+        </div>
       </div>
     </main>
-
   );
 }

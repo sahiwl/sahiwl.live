@@ -68,7 +68,7 @@ export const Navbar = function () {
       {/* Old Navbar (visible only on medium and larger screens) */}
       <div className="hidden md:block">
         <article className="w-full flex gap-4 justify-center mb-6 p-2">
-          <section className="w-1/2 p-2 rounded-lg mb-12 fixed top-4 z-[100] border-[1px] shadow-xl dark:border-neutral-800 border-neutral-200 backdrop-blur-md">
+          <section className="w-1/2 p-2 rounded-lg mb-12 fixed top-4 z-100 border-[1px] shadow-xl dark:border-neutral-800 border-neutral-200 backdrop-blur-md">
             <div className="flex items-center justify-between mx-auto w-full dark:text-[#00ADB5] text-[#4e201c] px-2">
               <div className="hover:scale-110 duration-300 ease-in-out -translate-y-0.5">
                 <Link href="/">
@@ -88,7 +88,7 @@ export const Navbar = function () {
               <div className="">
                 {mounted === true && (
                   <button
-                    className="w-full flex justify-center items-center shadow dark:bg-transparent hover:shadow-xl rounded"
+                    className="w-full flex justify-center items-center shadow-sm dark:bg-transparent hover:shadow-xl rounded-sm"
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   >
                     <div className="p-2">

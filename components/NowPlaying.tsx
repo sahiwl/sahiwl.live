@@ -35,7 +35,7 @@ export function NowPlaying() {
                 key={index}
                 className="flex gap-2 md:p-2 p-0 bg-transparent justify-between w-full"
               >
-                <div className="h-16 w-16 lg:h-20 lg:w-20 md:w-20 md:h-20 rounded-lg justify-center items-center flex flex-shrink-0">
+                <div className="h-16 w-16 lg:h-20 lg:w-20 md:w-20 md:h-20 rounded-lg justify-center items-center flex shrink-0">
                   <img
                     src={imageURL}
                     alt={songName}
