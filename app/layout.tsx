@@ -10,6 +10,7 @@ import NextTopLoader from "nextjs-toploader";
 import { MobileNav } from "@/components/MobileNavbar";
 
 import { ThemedParticles } from "@/components/ui/themedParticles";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Sahil Kumar Ray",
@@ -46,6 +47,9 @@ export default function RootLayout({
       suppressHydrationWarning={true}
       className={`${sometypemono.variable} ${inter.variable} ${exo2.variable} ${sono.variable} ${spacegrotesk.variable} scroll-smooth`}
     >
+     <head>
+     <Script defer src="https://cloud.umami.is/script.js" data-website-id="01c0c44d-373a-42de-902e-f8aecd113c0e"></Script>
+      </head>
       <body className="font-sometypemono dark:bg-zinc-900 bg-[#eae5db]">
         <ThemeProvider
           attribute="class"
