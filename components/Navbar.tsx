@@ -56,10 +56,10 @@ export const Navbar = function () {
     setIsOpen(!isOpen);
     console.log("toggleNavbar");
   };
-  console.log(`theme is ${theme}`);
   useEffect(() => {
     setMounted(true);
   }, []);
+  console.log(`theme is ${theme}`);
     return (
     <>
       {/* Mobile Navbar (visible only on small screens) */}

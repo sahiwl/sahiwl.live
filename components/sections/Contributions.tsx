@@ -2,46 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-async function fetchGitHubContributions(username: string, from: string, to: string) {
-  const query = `
-    query ($username: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $username) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            totalContributions
-            weeks {
-              contributionDays {
-                date
-                contributionCount
-                color
-              }
-            }
-          }
-        }
-      }
-    }
-  `;
+async function fetchGitHubContributions() {
+  const response = await fetch("/api/github-contributions");
 
-  const response = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query,
-      variables: { username, from, to },
-    }),
-  });
-
-  const data = await response.json();
-
-  if (!response.ok || !data.data || !data.data.user) {
-    console.error("Error fetching GitHub contributions:", data);
+  if (!response.ok) {
     throw new Error("Failed to fetch GitHub contributions");
   }
 
-  return data.data.user.contributionsCollection.contributionCalendar;
+  return await response.json();
 }
 
 export default function ContributionGraph() {
@@ -49,13 +17,7 @@ export default function ContributionGraph() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const username = "sahiwl";
-      const from = new Date(
-        new Date().setFullYear(new Date().getFullYear() - 1)
-      ).toISOString();
-      const to = new Date().toISOString();
-
-      const data = await fetchGitHubContributions(username, from, to);
+      const data = await fetchGitHubContributions();
       setCalendarData(data);
     };
 
