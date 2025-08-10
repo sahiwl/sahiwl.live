@@ -1,59 +1,96 @@
 "use client";
-import { useTheme } from "next-themes";
-import GitHubCalendar from "react-github-calendar";
-import { useState, useEffect } from "react";
 
-export const github: any = {
-  light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
-  dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
-};
+import { useEffect, useState } from "react";
+
+async function fetchGitHubContributions(username: string, from: string, to: string) {
+  const query = `
+    query ($username: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $username) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+                color
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query,
+      variables: { username, from, to },
+    }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok || !data.data || !data.data.user) {
+    console.error("Error fetching GitHub contributions:", data);
+    throw new Error("Failed to fetch GitHub contributions");
+  }
+
+  return data.data.user.contributionsCollection.contributionCalendar;
+}
 
 export default function ContributionGraph() {
-  const [calendarYear, setCalendarYear] = useState<number | undefined>(2025);
-  const { theme, systemTheme } = useTheme();
-  const [serverTheme, setServerTheme] = useState<"light" | "dark" | undefined>(
-    undefined
-  );
-  const scheme =
-    theme === "light" ? "light" : theme === "dark" ? "dark" : systemTheme;
+  const [calendarData, setCalendarData] = useState<any>(null);
 
   useEffect(() => {
-    setServerTheme(scheme);
-  }, [scheme]);
+    const fetchData = async () => {
+      const username = "sahiwl";
+      const from = new Date(
+        new Date().setFullYear(new Date().getFullYear() - 1)
+      ).toISOString();
+      const to = new Date().toISOString();
 
-  const username = "sahiwl";
-  const years = [2025, 2024]; 
+      const data = await fetchGitHubContributions(username, from, to);
+      setCalendarData(data);
+    };
+
+    fetchData();
+  }, []);
+
+  if (!calendarData) {
+    return <div>Loading...</div>;
+  }
+
+  const getColor = (contributionCount: number) => {
+    if (contributionCount === 0) return "bg-neutral-300 dark:bg-spaceblack border border-neutral-400 dark:border-neutral-800";
+    if (contributionCount < 3) return "bg-[#4e201c] dark:bg-[#00ADB5]";
+    if (contributionCount < 5) return "bg-[#7a2d26] dark:bg-[#007991]";
+    if (contributionCount < 7) return "bg-[#a33b30] dark:bg-[#005f73]";
+    return "bg-[#cc493a] dark:bg-[#003f5c]";
+  };
 
   return (
-    <div className="flex flex-col items-center gap-4 w-full">
-      {/* GitHub Contributions Graph */}
-      <div className="border dark:border-zinc-800 border-zinc-200 p-4 md:p-8 rounded-lg max-w-full overflow-x-auto">
-        <GitHubCalendar
-          username={username}
-          theme={github}
-          colorScheme={serverTheme}
-          blockSize={8} 
-          year={calendarYear}
-          style={{
-            color: serverTheme === "light" ? "black" : "white",
-          }}
-        />
+    <div className="flex flex-col items-center">
+      <h2 className="text-xl font-bold mb-4">GitHub Contributions</h2>
+      <div className="flex flex-wrap gap-1">
+        {calendarData.weeks.map((week: any, weekIndex: number) =>
+          week.contributionDays.map((day: any, dayIndex: number) => (
+            <div
+              key={`${weekIndex}-${dayIndex}`}
+              className={`w-4 h-4 rounded-sm ${getColor(day.contributionCount)}`}
+              title={`${day.date}: ${day.contributionCount} contributions`}
+            />
+          ))
+        )}
       </div>
-
-      {/* Years Grid at the Bottom */}
-      <div className="flex flex-wrap justify-center mt-4 gap-2">
-        {years.map((year) => (
-          <div
-            key={year}
-            className={`text-gray-600 dark:text-gray-400 text-sm hover:text-black dark:hover:text-white cursor-pointer ${
-              calendarYear === year ? "text-black dark:text-white font-bold" : ""
-            }`}
-            onClick={() => setCalendarYear(year === calendarYear ? undefined : year)}
-          >
-            {year}
-          </div>
-        ))}
-      </div>
+      <p className="mt-4">
+        Total Contributions: {calendarData.totalContributions}
+      </p>
     </div>
   );
 }

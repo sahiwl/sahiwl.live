@@ -3,7 +3,8 @@ import Link from "next/link";
 import { Typewriter } from "../ui/typewriter";
 
 export default function Welcome() {
-
+  
+  // console.log("RESUME" + process.env.NEXT_PUBLIC_RESUME)
   return (
     <section className="relative w-full min-h-[100vh] py-20 flex flex-col justify-center items-center bg-background">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
@@ -32,7 +33,7 @@ export default function Welcome() {
       {/* Resume */}
       <div className="absolute bottom-10 left-10 sm:left-10">
         <Link
-          href={process.env.RESUME || "#"}
+          href={process.env.NEXT_PUBLIC_RESUME || ""}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-md text-xl hover:underline text-slate-900 dark:text-slate-100 font-sometypemono hover:scale-105 transition-transform"
