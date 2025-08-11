@@ -26,6 +26,10 @@ export const allSkills : SkillArr = [
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
     },
     {
+        name: "GraphQL",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain-wordmark.svg"
+    },
+    {
         name: "Git",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
     },
